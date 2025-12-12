@@ -1,7 +1,7 @@
 /* === トップページ専用スタイル === */
 
 .hero {
-  background-image: url(".../images/common/header001.png");
+  background-image: url("./images/common/header001.png");
   background-size: cover;
   background-position: center;
   height: 350px;

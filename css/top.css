@@ -1,0 +1,58 @@
+/* === トップページ専用スタイル === */
+
+.hero {
+  background-image: url("/images/common/header001.png");
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  display: flex;
+  align-items: flex-end; /* ← 下に寄せるポイント */
+  justify-content: center;
+  position: relative;
+  color: white;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.5); /* 半透明オーバーレイ */
+  padding-top: .2em;
+  padding-bottom: .2em;
+  border-radius: 0;
+  text-align: center;
+  margin-bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hero h1 {
+  font-size: 2em;
+  margin: 0 0 0em;
+  color: #fff;
+}
+
+/*
+.hero p {
+  font-size: 1.2em;
+}
+*/
+
+@media (max-width: 600px) {
+  .hero {
+    background-position: center bottom;
+    height: 210px; /* スマホでは少し低めに */
+  }
+
+  .hero-overlay {
+    padding: 0.5em 4vw;
+  }
+
+  .hero h1 {
+    font-size: 1.4em;
+    line-height: 1.3;
+    margin: 0.3em 0;
+    word-break: keep-all; /* 途中で無理に改行されないように */
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+}
